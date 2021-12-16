@@ -366,11 +366,11 @@ def detect(model, dataset_dir, subset):
     print("Running on {}".format(dataset_dir))
 
     # Create directory
-    if not os.path.exists(RESULTS_DIR):
-        os.makedirs(RESULTS_DIR)
-    submit_dir = "submit_{:%Y%m%dT%H%M%S}".format(datetime.datetime.now())
-    submit_dir = os.path.join(RESULTS_DIR, submit_dir)
-    os.makedirs(submit_dir)
+    ##if not os.path.exists(RESULTS_DIR):
+      #  os.makedirs(RESULTS_DIR)
+    ##submit_dir = "submit_{:%Y%m%dT%H%M%S}".format(datetime.datetime.now())
+    ##submit_dir = os.path.join(RESULTS_DIR, submit_dir)
+    ##os.makedirs(submit_dir)
 
     # Read dataset
     dataset = NucleusDataset()
@@ -452,19 +452,19 @@ def detect(model, dataset_dir, subset):
         
         
         
-        res.append(r)
+        ###res.append(r)
         # Encode image to RLE. Returns a string of multiple lines
-        source_id = dataset.image_info[image_id]["id"]
-        rle = mask_to_rle(source_id, r["masks"], r["scores"])
+        ##source_id = dataset.image_info[image_id]["id"]
+        ##rle = mask_to_rle(source_id, r["masks"], r["scores"])
         ##print(rle[1])
-        submission.append(rle)
+        ##submission.append(rle)
         # Save image with masks
-        visualize.display_instances(
-            image, r['rois'], r['masks'], r['class_ids'],
-            dataset.class_names, r['scores'],
-            show_bbox=False, show_mask=False,
-            title="Predictions")
-        plt.savefig("{}/{}.png".format(submit_dir, dataset.image_info[image_id]["id"]))
+        ##visualize.display_instances(
+          #  image, r['rois'], r['masks'], r['class_ids'],
+          #  dataset.class_names, r['scores'],
+          #  show_bbox=False, show_mask=False,
+          #  title="Predictions")
+        ##plt.savefig("{}/{}.png".format(submit_dir, dataset.image_info[image_id]["id"]))
 
     # Save to csv file
     ##submission = "ImageId,EncodedPixels\n" + "\n".join(submission)
