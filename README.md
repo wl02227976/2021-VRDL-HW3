@@ -1,4 +1,4 @@
-# 2021-VRDL-HW2
+# 2021-VRDL-HW3
 
 This repository is the official implementation of [2021 VRDL HW3](https://codalab.lisn.upsaclay.fr/competitions/333?secret_key=3b31d945-289d-4da6-939d-39435b506ee5). 
 
@@ -20,14 +20,14 @@ To install requirements:
 
 ```setup
 #run the Anaconda Prompt
-conda create -n hw2 python=3.7 -y
-conda activate hw2
-conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+conda create -n hw3 python=3.7 -y
+conda activate hw3
 
-git clone https://github.com/wl02227976/2021-VRDL-HW2
-cd 2021-VRDL-HW2
+git clone https://github.com/wl02227976/2021-VRDL-HW3.git
+cd 2021-VRDL-HW3
 
 pip install -r requirements.txt
+python setup.py install
 ```
 
 ## Pretrained_Model
