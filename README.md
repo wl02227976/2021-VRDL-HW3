@@ -40,6 +40,7 @@ and put it in "2021-VRDL-HW3/model/"
 ## Data
 Download the dataset from [here](https://drive.google.com/file/d/1WCOhLfEreUA-2H_J7NmgvN1hefuvEREs/view?usp=sharing)
 and unzip it in "2021-VRDL-HW3/"
+There will be three folder in it, "train", "test", "stage1_test".
 
 
 ## Train
