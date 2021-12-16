@@ -59,6 +59,11 @@ answer.json will be in "2021 VRDL HW3/"
 
 
 ## Reference
+https://github.com/matterport/Mask_RCNN
+https://github.com/wanwanbeen/maskrcnn_nuclei
+https://stackoverflow.com/questions/49494337/encode-numpy-array-using-uncompressed-rle-for-coco-dataset
+https://www.programcreek.com/python/example/120725/pycocotools.mask.encode
+https://github.com/Jiankai-Sun/Modified-Mask-RCNN/blob/master/pycocotools/mask.py
 
 
 
