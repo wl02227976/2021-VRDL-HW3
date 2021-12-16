@@ -31,47 +31,34 @@ python setup.py install
 ```
 
 ## Pretrained_Model
-Download the [runs.zip](https://drive.google.com/drive/folders/1rcPvAKc6IzfcppW4ShS8HRmYsaB6llvk?usp=sharing)
+Download the [model](https://drive.google.com/file/d/15GLAv1nd9LT2lZbQHNDoA4Yoi_rlu69Q/view?usp=sharing)
 
-and unzip it in "2021-VRDL-HW2/"
+and put it in "2021-VRDL-HW3/model/"
 
 
 
 ## Data
-Download the dataset(test.zip and train.zip) from [here](https://drive.google.com/drive/folders/1rcPvAKc6IzfcppW4ShS8HRmYsaB6llvk?usp=sharing)
-and put them into the "data" folder and unzip them
+Download the dataset from [here](https://drive.google.com/file/d/1WCOhLfEreUA-2H_J7NmgvN1hefuvEREs/view?usp=sharing)
+and unzip it in "2021-VRDL-HW3/"
 
-```data
-python data_preprocess.py
-```
-
-create the folder named "valid" in "data" folder
-put 30001.png-33402.png(in "/data/train/") and 30001.txt-33402.txt(in "/data/train/") into "valid"folder
 
 ## Train
-Download the [yolov5m.pt](https://github.com/ultralytics/yolov5/releases)
-and put it in "2021-VRDL-HW2/weights"
+
 ```Train
-python train.py --img 320 --batch 16 --epochs 50 --data svhn.yaml --weights yolov5m.pt
+python nuclei_train.py --dir_log logs
 ```
 
 
 
 ## Inference
-Use [colab](https://drive.google.com/file/d/1k6zzedxfWwQWVEILrc5_faeMqtlFDfiP/view?usp=sharing)
-or
 
 ```Inference
-python detect.py --source data/test/ --weights runs/train/exp3/weights/hw2.pt --conf 0.25 --save-txt --save-conf
-python answer.py
+python samples/nucleus/nucleus.py detect --dataset=dataset --subset=stage1_test --weights=model/mask_rcnn_nuclei_train_0026.h5
 ```
-answer.json will be in "2021 VRDL HW2/"
+answer.json will be in "2021 VRDL HW3/"
 
 
 ## Reference
-https://github.com/ultralytics/yolov5/releases
-https://blog.csdn.net/iteapoy/article/details/117899064
-https://www.vitaarca.net/post/tech/access_svhn_data_in_python/
 
 
 
