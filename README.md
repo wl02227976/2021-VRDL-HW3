@@ -1,6 +1,6 @@
 # 2021-VRDL-HW2
 
-This repository is the official implementation of [2021 VRDL HW2](https://competitions.codalab.org/competitions/35888?secret_key=7e3231e6-358b-4f06-a528-0e3c8f9e328e#participate-submit_results). 
+This repository is the official implementation of [2021 VRDL HW3]https://codalab.lisn.upsaclay.fr/competitions/333?secret_key=3b31d945-289d-4da6-939d-39435b506ee5). 
 
 
 ## Reproducing Submission
