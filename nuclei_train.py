@@ -19,7 +19,6 @@ import glob
 import cv2
 import matplotlib.pyplot as plt
 
-%matplotlib inline
 
 from nuclei_config import Config
 import nuclei_utils as utils
