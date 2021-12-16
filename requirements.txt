@@ -10,4 +10,7 @@ opencv-python
 h5py==2.10
 imgaug
 pycocotools-windows 
+sklearn
+pandas
+regex
 IPython[all]
